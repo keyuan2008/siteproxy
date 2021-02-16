@@ -1,18 +1,3 @@
-# siteproxy
-pure web page proxy to google/youtube, zero configuration from client side. Reverse proxy to all internet. 
-
-```
-                                                 +----> google/youtube
-                             +----------------+  |
-                             |                |  |
-user browser +-------------->+ siteproxy      +-------> wikipedia
-                             |                |  |
-                             +----------------+  |
-                                                 +----> chinese forums
-```
-
-
-
 ### 特点
 - 代码量只有jsproxy的四分之一左右
 - 不使用service worker，不会和网站本身的service worker冲突
