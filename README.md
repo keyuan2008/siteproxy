@@ -1,6 +1,5 @@
 # siteproxy
-反向代理, 免翻墙访问youtube/twitter/google, 支持telegram web登录.
-pure web page proxy to google/youtube, zero configuration from client side. Reverse proxy to all internet. 一键部署，翻墙利器。
+pure web page proxy to google/youtube, zero configuration from client side. Reverse proxy to all internet. 
 
 ```
                                                  +----> google/youtube
@@ -11,21 +10,8 @@ user browser +-------------->+ siteproxy      +-------> wikipedia
                              +----------------+  |
                                                  +----> chinese forums
 ```
-请勿将本项目用于非法用途，否则后果自负。
 
-## 目录
 
-- [特点](#特点)
-- [原理](#原理)
-- [支持代理的网站](#支持代理的网站)
-- [部署到cloudflare_worker](#部署到cloudflare_worker)
-- [部署到now服务器](#部署到now服务器)
-- [部署到heroku服务器](#部署到heroku服务器)
-- [部署到vps服务器](#部署到vps服务器)
-- [cloudflare_worker_deployment](#cloudflare_worker_deployment)
-- [now_deployment](#now_deployment)
-- [vps_deployment](#vps_deployment)
-- [联系方式](#联系方式)
 
 ### 特点
 - 代码量只有jsproxy的四分之一左右
@@ -45,17 +31,6 @@ user browser +-------------->+ siteproxy      +-------> wikipedia
     https://xxx => https://siteproxy.herokuapp.com/https/xxx
     etc.
  4. send back the modified html/javascript to user browser.
-```
-
-### 支持代理的网站
-```
-1. www.google.com, and search action.
-2. www.youtube.com, only firefox browser is supported.
-3. zh.wikipedia.org, and search action.
-4. facebook, login is not verified.
-5. twitter, search in twitter, login is not supported.
-6. telegram web login
-7. 中文论坛等
 ```
 ### 部署到cloudflare_worker
 ```
@@ -160,7 +135,3 @@ user browser +-------------->+ siteproxy      +-------> wikipedia
 7. forever start -c 'node --tls-min-v1.0' index.js
 8. done, now you can access your domain name from browser.
 ```
-### 联系方式
-Telegram群: @siteproxy
-<br />
-email: netptop@gmail.com
